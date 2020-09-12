@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	</head>
+	<body>
+        <form method="POST" action="form.php">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o seu nome" autofocus required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="email@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="date" name="nascimento" id="nascimento" class="form-control" required min="1930-01-01"> 
+            </div>
+
+            <div class="form-group">
+                <label>Sexo</label>
+                <input type="radio" name="sexo" id="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <div class="form-group">
+                <label for="li">Li e aceito os termos</label>
+                <input type="checkbox" name="li" id="li" required>
+            </div>
+
+            <div class="form-group">
+                <label for="volume">Volume</label>
+                <input type="range" name="volume" id="volume">
+            </div>
+
+            <div class="form-group">
+                <label for="meter">Bateria</label>
+                <meter name="meter" min="0" max="100" low="15" value="12">12</meter>
+            </div>
+
+            <div class="form-group">
+                <label for="carregando">Carregando</label>
+                <progress min="0" max="100" value="60">60%</progress>
+            </div>
+
+            <div class="form-group">
+                <label for="cor">Cor</label>
+                <input type="color" name="cor" id="cor">
+            </div>
+            <div class="form-group">
+                <textarea ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="estados">Estados</label>
+                <select name="estados" id="estado">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG" selected>Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="estados">Estados</label>
+                <select name="estados" id="estado">
+                    <optgroup label="Sudeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG" selected>Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="hidden" name="id" value="1">
+                
+                <input type="password">
+            </div>
+
+            <div class="form-group">
+                <input type="text" list="navegadores">
+                <datalist id="navegadores">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Safari">
+                    <option value="Edge">
+                </datalist>
+            </div>
+
+
+            <div>
+                <button type="submit" class="btn btn-primary" tabindex="0">Enviar</button>
+            </div>
+
+        </form>
+
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
